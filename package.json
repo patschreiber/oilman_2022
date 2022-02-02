@@ -1,6 +1,6 @@
 {
   "name": "oilman_2022",
-  "version": "0.1.304-0",
+  "version": "0.1.304-1",
   "description": "An incremental game about harvesting oil.",
   "main": "index.js",
   "author": "Patrick Schreiber",
