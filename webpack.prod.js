@@ -1,4 +1,6 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const pkg = require('./package.json');
 
 module.exports = {
   name: 'production',
@@ -24,7 +26,14 @@ module.exports = {
   },
   output: {
     filename: 'build.js',
-    path: path.resolve(__dirname,'dist','production'),
+    path: path.resolve(__dirname, 'dist', 'production'),
     clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: pkg.displayName,
+      template: 'src/templates/index.ejs',
+      showErrors: false,
+    })
+  ],
 };
