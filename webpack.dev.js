@@ -1,4 +1,5 @@
 const path = require('path');
+const pkg = require('./package.json');
 
 module.exports = {
   name: 'development',
@@ -23,8 +24,8 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'build.js',
+    filename: 'build-' + pkg.version + '.js',
     path: path.resolve(__dirname,'dist','development'),
-    clean: true,
+    clean: false,
   },
 };
