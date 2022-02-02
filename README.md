@@ -10,4 +10,5 @@ An incremental game about harvesting oil.
 
 |Name|Command|
 |:---|---|
-|Build|`npx tsc`|
+|Build (Prod)|`yarn build` or `yarn build-prod`|
+|Build (Dev)|`yarn build-dev`|
