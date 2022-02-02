@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const pkg = require('./package.json');
 
@@ -28,4 +29,11 @@ module.exports = {
     path: path.resolve(__dirname,'dist','development'),
     clean: false,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: pkg.displayName + ' Build: ' + pkg.version,
+      template: 'src/templates/index.ejs',
+      showErrors: true,
+    })
+  ],
 };
