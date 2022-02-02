@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require('path');
 const pkg = require('./package.json');
 
@@ -34,6 +35,14 @@ module.exports = {
       title: pkg.displayName + ' Build: ' + pkg.version,
       template: 'src/templates/index.ejs',
       showErrors: true,
-    })
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './LICENSES.txt',
+          to: path.resolve(__dirname, 'dist', 'development'),
+        }
+      ]
+    }),
   ],
 };
