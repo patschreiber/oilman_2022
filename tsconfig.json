@@ -21,6 +21,5 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false
-
   }
 }
