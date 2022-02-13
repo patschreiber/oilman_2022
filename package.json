@@ -1,7 +1,7 @@
 {
   "name": "oilman_2022",
   "displayName": "Oilman 2022",
-  "version": "0.5.1-0",
+  "version": "0.5.1-17",
   "description": "An incremental game about harvesting oil.",
   "main": "index.js",
   "author": "Patrick Schreiber <2431707+patschreiber@users.noreply.github.com>",

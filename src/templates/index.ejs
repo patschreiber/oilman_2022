@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script src="build.js"></script>
-    <footer>
+    <nav class="nav header"></nav>
+    <canvas id="game-pane" style="border: 1px solid #333333;"></canvas>
+    <footer class="footer">
       <p><%= htmlWebpackPlugin.options.title %></p>
       <a class="licenses" href="LICENSES.txt">LICENSES</a>
     </footer>

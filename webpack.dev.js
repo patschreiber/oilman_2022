@@ -41,6 +41,10 @@ module.exports = {
         {
           from: './LICENSES.txt',
           to: path.resolve(__dirname, 'dist', 'development'),
+        },
+        {
+          from: './src/styles/style.css',
+          to: path.resolve(__dirname, 'dist', 'development'),
         }
       ]
     }),
