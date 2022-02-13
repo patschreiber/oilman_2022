@@ -15,11 +15,11 @@ export class GameObject implements GameObject {
     this.position = position;
   }
 
-  public getPosition() {
+  public getPosition(): Coordinate {
     return this.position;
   }
 
-  public getUuid() {
+  public getUuid(): string {
     return this.uuid;
   }
 
@@ -31,14 +31,4 @@ export class GameObject implements GameObject {
   private generateUuid(): string {
     return uuid.v4();
   }
-
-  /**
-   * Validates the UUID of the Game Object.
-   *
-   * @returns {boolean} If the UUID was valid.
-   */
-  // private validateUuid(): boolean {
-  //   return (uuid.validate(this.uuid));
-  // }
-
 }
